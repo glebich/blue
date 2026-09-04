@@ -30,7 +30,7 @@ jobs:
             if curl -fsSL --max-time 120 -o "$dest.tmp" "$url"; then
               kind=$(file -b --mime-type "$dest.tmp")
               case "$kind" in
-                image/*)
+                image/*|video/*)
                   mv "$dest.tmp" "$dest"
                   echo "    ok: $kind, $(stat -c%s "$dest") bytes"
                   ok=$((ok+1))

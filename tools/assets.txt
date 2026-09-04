@@ -2,3 +2,4 @@ assets/brand/hero-bg.png | https://www.dropbox.com/scl/fi/lixn1zfjix5e36ybplhw3/
 # Feature screenshots (assets/design/*.png) were exported from the Figma file
 # d9Fl4WYdMCD8ZKfWapRdU9 via short-lived MCP asset URLs and are committed directly.
 assets/brand/hero-phone.png | https://www.figma.com/api/mcp/asset/1539430e-e5e6-4c73-8e11-645ee681449b.png
+assets/brand/blue-orb.mp4 | https://www.dropbox.com/scl/fi/3futu25glwjmn7op66l52/blue.mp4?rlkey=xan12zgc12ppncu5bk8c2q977&dl=1

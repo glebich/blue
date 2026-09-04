@@ -1,0 +1,64 @@
+name: Fetch design assets
+
+on:
+  push:
+    paths:
+      - 'tools/assets.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download each asset
+        run: |
+          set -u
+          ok=0
+          fail=0
+          while IFS='|' read -r dest url; do
+            case "$dest" in ''|\#*) continue ;; esac
+            dest=$(echo "$dest" | xargs)
+            url=$(echo "$url" | xargs)
+            [ -z "$url" ] && continue
+            mkdir -p "$(dirname "$dest")"
+            echo "--> $dest"
+            if curl -fsSL --max-time 120 -o "$dest.tmp" "$url"; then
+              kind=$(file -b --mime-type "$dest.tmp")
+              case "$kind" in
+                image/*)
+                  mv "$dest.tmp" "$dest"
+                  echo "    ok: $kind, $(stat -c%s "$dest") bytes"
+                  ok=$((ok+1))
+                  ;;
+                *)
+                  echo "    NOT AN IMAGE: got $kind"
+                  head -c 200 "$dest.tmp" || true
+                  echo
+                  rm -f "$dest.tmp"
+                  fail=$((fail+1))
+                  ;;
+              esac
+            else
+              echo "    download failed"
+              rm -f "$dest.tmp"
+              fail=$((fail+1))
+            fi
+          done < tools/assets.txt
+          echo "downloaded=$ok failed=$fail" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit whatever arrived
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets tools
+          if git diff --cached --quiet; then
+            echo "nothing new"
+          else
+            git commit -m "Fetch design assets from tools/assets.txt"
+            git push
+          fi

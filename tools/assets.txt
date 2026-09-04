@@ -5,3 +5,5 @@ assets/design/search.png | https://www.figma.com/api/mcp/asset/542c13c6-4ab4-42b
 assets/design/lock-proactive.png | https://www.figma.com/api/mcp/asset/6aba28f3-0d30-4e26-bd23-d4d09fd0876e.png
 assets/design/listening.png | https://www.figma.com/api/mcp/asset/b5b206f8-e629-477d-a128-d18b713dfe7a.png
 assets/design/dictation.png | https://www.figma.com/api/mcp/asset/f18f6c64-9c05-4651-b98c-40d1c61ba938.png
+assets/design/home-agents.png | https://www.figma.com/api/mcp/asset/31b8bcda-1bf5-4421-921b-5cc9248ad805.png
+assets/design/search-contacts.png | https://www.figma.com/api/mcp/asset/d79cb610-5141-4a10-9f00-1cb103f6c300.png

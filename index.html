@@ -1736,126 +1736,48 @@ body {
 
       <div class="features__stage" aria-hidden="true">
         <div class="features__card">
-          <!-- Each shot is the matching screen from the Blue UI design file,
-               drawn in HTML so it scales with the frame. Swap any for a real
-               export by dropping an <img> into .feature__frame. -->
+          <!-- Each shot is the matching screen exported from the Blue UI
+               design file (assets/design). The frame clips it to the phone. -->
 
           <!-- 1 · Background agents: home screen, Blue working in Gmail -->
           <figure class="feature__shot" data-shot="1">
             <div class="feature__frame">
-              <div class="ui ui--home">
-                <div class="ui__banner">
-                  <span class="ui__orb"></span>
-                  <div>
-                    <p>Blue is currently working in Gmail. Would you like to stop the action and take over?</p>
-                    <div class="ui__actions"><span class="ui__btn ui__btn--go">Yes</span><span class="ui__btn">No</span></div>
-                  </div>
-                </div>
-                <p class="ui__date">Tue, Aug 18</p>
-                <p class="ui__clock ui__clock--soft">08:45</p>
-                <p class="ui__hey">Hey Omar</p>
-                <p class="ui__digest">You have three tasks due today, and Peter is waiting for your reply.</p>
-                <div class="ui__apps">
-                  <span class="ui__tile"><i class="ic ic--phone"></i><b>Phone</b></span>
-                  <span class="ui__tile"><i class="ic ic--msg"></i><b>Messages</b></span>
-                  <span class="ui__stack">
-                    <i class="av av--1"></i><i class="av av--2"></i><i class="av av--3"></i><i class="av av--4"></i>
-                    <b>Blue Stack</b>
-                  </span>
-                  <span class="ui__tile"><i class="ic ic--drive"></i><b>Drive</b></span>
-                  <span class="ui__tile"><i class="ic ic--photos"></i><b>Photos</b></span>
-                </div>
-                <div class="ui__dock"><i></i><i></i><i></i><i class="ui__dock-wide"></i><i class="ui__dock-wide"></i></div>
-              </div>
+              <img src="assets/design/home.png" alt="Blue home screen: the morning digest above the app grid and Blue Stack" loading="lazy" decoding="async">
             </div>
           </figure>
 
           <!-- 2 · Notifications: lock screen digest instead of a pile of alerts -->
           <figure class="feature__shot" data-shot="2">
             <div class="feature__frame">
-              <div class="ui ui--lock">
-                <p class="ui__date">Tue, Aug 18</p>
-                <p class="ui__clock">08:45</p>
-                <div class="ui__lockcopy">
-                  <p class="ui__hey">Hey Omar</p>
-                  <p class="ui__digest">You have three tasks due today, and Peter is waiting for your reply. Clouds clear by noon. High 34°</p>
-                  <p class="ui__digest-meta">Everything else is filed for later</p>
-                </div>
-                <div class="ui__dock ui__dock--lock"><i></i><i class="ui__dock-wide"></i><i></i></div>
-              </div>
+              <img src="assets/design/lock-notifications.png" alt="Blue lock screen: one short digest instead of a pile of notifications" loading="lazy" decoding="async">
             </div>
           </figure>
 
           <!-- 3 · Memory: the search sheet already knows who's who -->
           <figure class="feature__shot" data-shot="3">
             <div class="feature__frame">
-              <div class="ui ui--search">
-                <p class="ui__label">Apps</p>
-                <div class="ui__row">
-                  <span class="ui__tile ui__tile--sm"><i class="ic ic--drive"></i><b>Drive</b></span>
-                  <span class="ui__tile ui__tile--sm"><i class="ic ic--msg"></i><b>Messages</b></span>
-                  <span class="ui__tile ui__tile--sm"><i class="ic ic--photos"></i><b>Photos</b></span>
-                  <span class="ui__tile ui__tile--sm"><i class="ic ic--phone"></i><b>Phone</b></span>
-                </div>
-                <p class="ui__label">Contacts</p>
-                <div class="ui__contact"><i class="av av--1"></i><span>Maya Chen</span><em>Dad's electrician</em></div>
-                <div class="ui__contact"><i class="av av--2"></i><span>Daniel Brooks</span><em>Lunch, Fridays</em></div>
-                <div class="ui__contact"><i class="av av--3"></i><span>Alex Morgan</span><em>Design review</em></div>
-                <div class="ui__field"><span class="ui__plus">+</span>Search or ask blue</div>
-                <div class="ui__keys" aria-hidden="true">
-                  <div>QWERTYUIOP</div><div>ASDFGHJKL</div><div>ZXCVBNM</div>
-                </div>
-              </div>
+              <img src="assets/design/search-contacts.png" alt="Blue search sheet: apps and contacts it already knows" loading="lazy" decoding="async">
             </div>
           </figure>
 
           <!-- 4 · Proactive: lock screen, "Leave in 34 min" -->
           <figure class="feature__shot" data-shot="4">
             <div class="feature__frame">
-              <div class="ui ui--lock ui--bloom">
-                <p class="ui__date">Tue, Aug 18</p>
-                <p class="ui__clock">08:45</p>
-                <div class="ui__card ui__card--ride">
-                  <span class="ui__uber">Uber</span>
-                  <div><strong>Leave in 34 min</strong><span>Take an Uber to arrive on time</span></div>
-                </div>
-                <div class="ui__dock ui__dock--lock"><i></i><i class="ui__dock-wide"></i><i></i></div>
-              </div>
+              <img src="assets/design/lock-proactive.png" alt="Blue lock screen: Leave in 34 min, take an Uber to arrive on time" loading="lazy" decoding="async">
             </div>
           </figure>
 
           <!-- 5 · Voice: the Listening screen -->
           <figure class="feature__shot" data-shot="5">
             <div class="feature__frame">
-              <div class="ui ui--listen">
-                <p class="ui__date">Tue, Aug 18</p>
-                <p class="ui__clock ui__clock--ghost">08:45</p>
-                <p class="ui__listening">Listening</p>
-                <div class="ui__wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-                <div class="ui__listen-actions"><i></i><i class="ui__send"></i><i></i></div>
-              </div>
+              <img src="assets/design/listening.png" alt="Blue listening screen" loading="lazy" decoding="async">
             </div>
           </figure>
 
           <!-- 6 · Dictation: the Messages thread with Blue's keyboard -->
           <figure class="feature__shot" data-shot="6">
             <div class="feature__frame feature__frame--light">
-              <div class="ui ui--dictate">
-                <div class="ui__thread-head"><span class="ui__back">&lsaquo; 42</span><span class="ui__who">Linda</span><span class="ui__edit">Edit</span></div>
-                <i class="av av--5 ui__avatar"></i>
-                <p class="ui__today">Today</p>
-                <div class="ui__bubble ui__bubble--me">The client would like to review the latest changes today.</div>
-                <div class="ui__bubble">Can we move the design review to 3 PM?</div>
-                <div class="ui__composer">
-                  <span class="ui__plus ui__plus--lg">+</span>
-                  <p>Thursday at 3 PM works for me. Please update the invite and let everyone know.<span class="ui__caret"></span></p>
-                  <span class="ui__send ui__send--sm"></span>
-                </div>
-                <div class="ui__chips"><span>&#8630;</span><span>Raw</span><span class="is-on">Instant</span><span>Thinking</span><span class="ui__mic"></span></div>
-                <div class="ui__keys ui__keys--light" aria-hidden="true">
-                  <div>QWERTYUIOP</div><div>ASDFGHJKL</div><div>ZXCVBNM</div>
-                </div>
-              </div>
+              <img src="assets/design/dictation.png" alt="Messages thread with Blue keyboard: Raw, Instant and Thinking dictation modes" loading="lazy" decoding="async">
             </div>
           </figure>
 

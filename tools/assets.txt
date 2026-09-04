@@ -1,1 +1,7 @@
 assets/brand/hero-bg.png | https://www.dropbox.com/scl/fi/lixn1zfjix5e36ybplhw3/image-6348191.png?rlkey=nlbkkpgfztxuw7u58unt7ni9l&dl=1
+assets/design/home.png | https://www.figma.com/api/mcp/asset/957426cf-95ac-4aae-9caf-fcd7649fb9c9.png
+assets/design/lock-notifications.png | https://www.figma.com/api/mcp/asset/18716023-48b1-4c22-bdad-4827d6ce6945.png
+assets/design/search.png | https://www.figma.com/api/mcp/asset/542c13c6-4ab4-42ba-a4c7-087278af3312.png
+assets/design/lock-proactive.png | https://www.figma.com/api/mcp/asset/6aba28f3-0d30-4e26-bd23-d4d09fd0876e.png
+assets/design/listening.png | https://www.figma.com/api/mcp/asset/b5b206f8-e629-477d-a128-d18b713dfe7a.png
+assets/design/dictation.png | https://www.figma.com/api/mcp/asset/f18f6c64-9c05-4651-b98c-40d1c61ba938.png

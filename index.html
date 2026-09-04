@@ -321,6 +321,10 @@ body {
   height: auto;
   max-width: 100%;
   max-height: min(84vh, 820px);
+  /* The export is a rectangle with a dark-grey field behind the device. Its
+     corners start 190px in on a 1034px-wide image, so this radius follows the
+     metal frame and trims that field away. */
+  border-radius: 18.8% / 8.9%;
   filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.55));
 }
 
@@ -1067,8 +1071,10 @@ body {
   .hero2__media {
     grid-column: 1;
     grid-row: 4;
-    justify-self: center;
+    justify-self: stretch;
+    justify-content: center;
     margin: 12px 0 -10%;
+    padding: 0 50px;
   }
   .device__shot { max-height: min(62vh, 520px); }
 

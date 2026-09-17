@@ -1,7 +1,12 @@
 assets/brand/hero-bg.png | https://www.dropbox.com/scl/fi/lixn1zfjix5e36ybplhw3/image-6348191.png?rlkey=nlbkkpgfztxuw7u58unt7ni9l&dl=1
-# Feature screenshots (assets/design/*.png) were exported from the Figma file
-# d9Fl4WYdMCD8ZKfWapRdU9 via short-lived MCP asset URLs and are committed directly.
-assets/brand/hero-phone.png | https://www.figma.com/api/mcp/asset/1539430e-e5e6-4c73-8e11-645ee681449b.png
 assets/brand/blue-orb.mp4 | https://www.dropbox.com/scl/fi/3futu25glwjmn7op66l52/blue.mp4?rlkey=xan12zgc12ppncu5bk8c2q977&dl=1
-assets/design/lock-proactive.png | https://www.figma.com/api/mcp/asset/1cc40d5f-8b17-4313-94ef-089d00d6a316.png
-assets/design/search-contacts.png | https://www.figma.com/api/mcp/asset/5fd70c7c-3ac7-4acd-9037-8854eb75ef04.png
+# Feature screenshots (assets/design/*.png) are 2x exports from the Blue UI
+# Design Figma file d9Fl4WYdMCD8ZKfWapRdU9, fetched through short-lived MCP
+# asset URLs. The URLs expire within minutes of being issued, so a line below
+# only works on the push that added it; the committed PNG is the record.
+# Sep 17 feedback screens (pos page, section "Website · Feature screens"):
+assets/design/lock-results.png | https://www.figma.com/api/mcp/asset/98b0cc52-ae6c-4b28-b932-15a5f3c7b7cb.png
+assets/design/agent-receipts.png | https://www.figma.com/api/mcp/asset/496107eb-c98c-46df-aeee-f18180c941ac.png
+assets/design/memory-kyle.png | https://www.figma.com/api/mcp/asset/d806db27-0ff3-4ece-91fd-687ffdcc7db2.png
+# Listening screen (UI page, Lock Screen section, node 2582:4750):
+assets/design/voice-listening.png | https://www.figma.com/api/mcp/asset/4f1896e4-bfb4-4f04-8310-6dd075353357.png

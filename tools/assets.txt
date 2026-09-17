@@ -10,3 +10,5 @@ assets/design/agent-receipts.png | https://www.figma.com/api/mcp/asset/496107eb-
 assets/design/memory-kyle.png | https://www.figma.com/api/mcp/asset/d806db27-0ff3-4ece-91fd-687ffdcc7db2.png
 # Listening screen (UI page, Lock Screen section, node 2582:4750):
 assets/design/voice-listening.png | https://www.figma.com/api/mcp/asset/4f1896e4-bfb4-4f04-8310-6dd075353357.png
+# Dictation screen (pos page, website section; Base Messages frame with the finished sentence):
+assets/design/dictate.png | https://www.figma.com/api/mcp/asset/05db9566-4c89-44b4-b18a-e587e0b40142.png
